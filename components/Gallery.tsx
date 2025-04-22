@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Gallery from 'react-photo-gallery'
 
 const photos = [
   {
@@ -23,7 +22,6 @@ const photos = [
 const MemoryGallery = () => (
   <div className="px-4 py-10 bg-white">
     <h2 className="text-4xl text-center font-birthday text-pinky mb-6">📸 Memory Lane</h2>
-    {/* <Gallery photos={photos} /> */}
   </div>
 )
 
