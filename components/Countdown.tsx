@@ -1,0 +1,29 @@
+'use client'
+
+import React from 'react'
+import Countdown from 'react-countdown'
+
+const Completionist = () => <span className="text-3xl font-bold">🎉 It’s time! 🎉</span>
+
+const CountdownTimer = ({ birthday }: { birthday: string }) => {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-black via-purpleNight to-pinky text-white text-center">
+      <h1 className="text-5xl font-birthday mb-4">Countdown to Birthday 🎂</h1>
+      <Countdown 
+        date={new Date(birthday)}
+        renderer={({ days, hours, minutes, seconds, completed }) =>
+          completed ? (
+            <Completionist />
+          ) : (
+            <div className="text-4xl space-y-2">
+              <div>{days}d {hours}h {minutes}m {seconds}s</div>
+              <p className="text-lg font-light mt-2">Hold tight… it’s almost time!</p>
+            </div>
+          )
+        }
+      />
+    </div>
+  )
+}
+
+export default CountdownTimer
