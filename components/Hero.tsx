@@ -1,9 +1,12 @@
 'use client'
-
+import dynamic from 'next/dynamic'
 import React from 'react'
-import Confetti from 'react-confetti'
 import { useWindowSize } from 'react-use'
-import PictureFrames from './PictureFrames'
+
+// ⛱️ No SSR for Confetti
+const Confetti = dynamic(() => import('react-confetti'), {
+  ssr: false,
+})
 
 const Hero = () => {
   const { width, height } = useWindowSize()

@@ -28,8 +28,9 @@ export default function BirthdayChatbox() {
 
   const sendEmail = (wish: string, name: string) => {
     const templateParams = {
-      from_name: name || 'Anonymous',
+      name: name || 'Anonymous',
       message: wish,
+      to_email: ['ayusoye@gmail.com', 'olanikeblossom@gmail.com'],
     };
 
     emailjs
