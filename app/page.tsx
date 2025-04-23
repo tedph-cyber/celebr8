@@ -18,10 +18,10 @@ export default function Home() {
   const isBirthday = today.toDateString() === birthday.toDateString();
   
   return (
-    // <>
-    //   {!isBirthday ? (
-    //   <CountdownTimer birthday={birthday.toISOString()} />
-    //   ) : (
+    <>
+      {!isBirthday ? (
+      <CountdownTimer birthday={birthday.toISOString()} />
+      ) : (
       < div className="flex flex-col items-center justify-center min-h-screen">
         <Fireworks />
         <ThemeSwitch />
@@ -30,7 +30,7 @@ export default function Home() {
         <Wishes />
         <MemoryGallery />
       </div>
-    //   )}
-    // </>
+      )}
+    </>
   );
 }
