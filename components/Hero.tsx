@@ -12,8 +12,6 @@ const Hero = () => {
     <div>
     <div className="relative flex flex-col items-center justify-center h-screen text-center bg-gradient-to-br from-pinky to-purpleNight px-4 wrap text-white">
       <Confetti width={width} height={height} />
-
-      <PictureFrames />
       <h1 className="text-6xl text-black dark:text-white md:text-8xl font-birthday drop-shadow-lg mb-4 z-10">
         Happy Birthday, Dad & Mum! 
       </h1>

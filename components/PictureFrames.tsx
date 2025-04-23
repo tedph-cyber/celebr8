@@ -9,7 +9,7 @@ const images = [frame1, frame2, frame3]
 
 const PictureFrames = () => {
   return (
-    <div className="bg-white dark:bg-[#111827] py-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center z-10">
+    <div className="bg-white mt-10 dark:bg-[#111827] py-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center z-10">
       {images.map((img, index) => (
         <div
           key={index}

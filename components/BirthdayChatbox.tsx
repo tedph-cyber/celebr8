@@ -50,7 +50,7 @@ export default function BirthdayChatbox() {
   return (
     <div className={`${styles.chatWidget} ${open ? styles.open : ''}`}>
       <button
-        className={styles.toggleBtn}
+        className={`${styles.toggleBtn} sm:px-4 sm:py-2 sm:rounded-full sm:text-sm`}
         onClick={() => setOpen((prev) => !prev)}
       >
         {open ? '🧁 Close' : '🎉 Wish'}

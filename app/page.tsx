@@ -6,6 +6,7 @@ import MusicPlayer from "@/components/MusicPlayer";
 import Wishes from "@/components/Wishes";
 import ThemeSwitch from "@/components/Themeswitch";
 import BirthdayChatbox from "@/components/BirthdayChatbox";
+import PictureFrames from "@/components/PictureFrames";
 
 export const metadata = {
   title: "Happy Birthday 🎂",
@@ -28,6 +29,7 @@ export default function Home() {
         <ThemeSwitch />
         <MusicPlayer />
         <Hero />
+        <PictureFrames />
         <Wishes />
         <MemoryGallery />
         <BirthdayChatbox />
