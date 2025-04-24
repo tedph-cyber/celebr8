@@ -19,8 +19,8 @@ const pacifico = Pacifico({
 });
 
 export const metadata: Metadata = {
-  title: "Happy birthday to Ayo-Oyekola",
-  description: "Great day celebrating Ayo-Oyekola's birthday",
+  title: "Happy birthday to Ayo & Nike Oyekola",
+  description: "Great day celebrating the Oyekolas' birthday",
 };
 
 export default function RootLayout({
