@@ -4,3 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* 🔥 Theme-aware overrides with CSS variables */
+:global(:root) {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #beff46;
+    --hover-accent: #a6e437;
+    --message-bg: #f1f5f9;
+    --messages-bg: #f9f9f9;
+    --border-color: #ddd;
+  }
+  
+  :global(.dark) {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --accent-color: #beff46;
+    --hover-accent: #d3ff7d;
+    --message-bg: #2c2c2c;
+    --messages-bg: #242424;
+    --border-color: #444;
+  }
+  

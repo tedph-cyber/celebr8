@@ -1,3 +1,43 @@
+/* ✨ Variable-based overrides for theme compatibility */
+.chatbox {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.messages {
+  background-color: var(--messages-bg);
+  border: 1px solid var(--border-color);
+}
+
+.message {
+  background: var(--message-bg);
+  border-left: 4px solid var(--accent-color);
+}
+
+.wishText {
+  color: var(--text-color);
+}
+
+.input,
+.textarea {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.sendBtn,
+.toggleBtn {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.sendBtn:hover,
+.toggleBtn:hover {
+  background-color: var(--hover-accent);
+}
+
+
+/* 🛡️ Existing styles (untouched for production consistency) */
 .chatWidget {
   position: fixed;
   bottom: 1.5rem;
@@ -10,7 +50,7 @@
 .toggleBtn {
   background-color: #beff46;
   border: none;
-  border-radius: 9999px; /* fully rounded */
+  border-radius: 9999px;
   padding: 0.85rem 1rem;
   font-weight: bold;
   cursor: pointer;
